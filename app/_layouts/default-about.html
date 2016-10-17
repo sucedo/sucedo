@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ page.title }}</title>
+    <meta name="description" content="{{ page.description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+
+    <!-- build:css({app,.tmp}) /css/main.css -->
+    <link rel="stylesheet" href="/_bower_components/normalize-css/normalize.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- endbuild -->
+
+    <!-- build:js(app) /js/head-scripts.js -->
+    <!-- Replace with a custom modernizer build for production -->
+    <script src="/_bower_components/modernizr/modernizr.js"></script>
+    <!-- bower:js -->
+    <script src="/_bower_components/jquery/dist/jquery.js"></script>
+    <script src="/_bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+
+    <!-- endbower -->
+    <!-- endbuild -->
+
+  </head>
+  <body>
+    <div id="header">
+        <a href="/"><img class="logo" src="/img/logo.png"/></a>
+
+        <ul class="menu">
+          <li><a href="/products/oxbridge/">Oxbridge Preparation</a></li>
+          <li><a href="/resources">Resources</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+    </div>
+    <!--[if lt IE 8]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <section class="jumbotron homepage">
+      <div class="col-md-4 background">
+        <h1>We can help you get into Oxbridge.</h1>
+        <p>Sucedo teaches committed Oxbridge applicants skills that maximise their chances of a place at Oxford or Cambridge.</p>
+      </div>
+
+      <div class="col-md-8 content">
+
+        <ul class="submenu">
+          <li><a href="/about/">About</a></li>
+          <li><a href="/about/faq/">FAQ</a></li>
+          <li><a href="/about/tutors/">Tutor Recruitment</a></li>
+        </ul>
+
+        {{ content }}
+
+      </div>
+
+
+    </section>
+
+
+    {% include scripts.html %}
+    {% include googleanalytics.html %}
+
+  </body>
+</html>
