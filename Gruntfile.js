@@ -340,7 +340,7 @@ module.exports = function (grunt) {
       ]
     }
   });
-  
+
 
   // Define Tasks
   grunt.registerTask('serve', function (target) {
@@ -400,6 +400,13 @@ module.exports = function (grunt) {
     'test',
     'build'
   ]);
+
+  grunt.registerTask('deploy', [
+    'check',
+    'test',
+    'build',
+    'buildcontrol'
+    ]);
 
   grunt.registerTask('deploy-travis', [
     'check',
