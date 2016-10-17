@@ -280,6 +280,26 @@ module.exports = function (grunt) {
         }]
       }
     },
+    buildcontrol: {
+      dist: {
+        options: {
+          remote: 'git@github.com:sucedo/sucedo.github.io',
+          branch: 'gh-pages',
+          commit: true,
+          push: true
+        }
+      },
+      travis: {
+        options: {
+          remote: 'https://github.com/sucedo/sucedo.github.io',
+          branch: 'gh-pages',
+          login: process.env.GH_TOKEN,
+          token: 'x-oauth-basic',
+          commit: true,
+          push: true
+        }
+      }
+    },
     jshint: {
       options: {
         jshintrc: '.jshintrc',
@@ -379,4 +399,11 @@ module.exports = function (grunt) {
     'test',
     'build'
   ]);
+
+  grunt.registerTask('deploy-travis', [
+    'check',
+    'test',
+    'build',
+    'buildcontrol:travis'
+    ]);
 };
