@@ -4,7 +4,7 @@
 
 $blue: #234074;
 $text: #333333;
-$font-family: 'Taviraj', serif;
+$font-family: 'Open Sans', serif;
 
 
 body {
@@ -120,10 +120,20 @@ ul.submenu {
       background-image: url("/img/cambridge.jpeg");
       background-size: cover;
       background-position: center right;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      color: #fff;
+      padding: 0;
+    
+
+      .overlay {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        color: #fff;
+        background-color: rgba(0,0,0,.4);
+        padding: 0 10px;
+
+      }
 
     }
 

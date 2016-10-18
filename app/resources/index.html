@@ -6,21 +6,22 @@ description: Read blogs and case studies to maximise your chances of a place at 
 
 <section class="jumbotron homepage">
   <div class="col-md-4 background">
-    <h1>We can help you get into Oxbridge.</h1>
-    <p>Sucedo teaches committed Oxbridge applicants skills that maximise their chances of a place at Oxford or Cambridge.</p>
+    <div class="overlay">
+      <h1>We can help you get into Oxbridge.</h1>
+      <p>Sucedo teaches committed Oxbridge applicants skills that maximise their chances of a place at Oxford or Cambridge.</p>
+    </div>
   </div>
 
   <div class="col-md-8 content">
     
     <h2>Articles</h2>
+    <article><h3><a href="/skills-package-example">Skills Package Example</a></h3></article>
     {% for post in site.posts %}
       <article><h3><a href="{{ post.url }}">{{ post.title }}</a></h3></article>
     {% endfor %}
 
-    <h2>Further Information</h2>
+    <h2>Case Study</h2>
     <article><h3><a href="/case-study">Sucedo Client Case Study - Jo</a></h3></article>
-    <article><h3><a href="/skills-package-example">Skills Package Example</a></h3></article>
-
     
     <h2>Questions?</h2>
     
