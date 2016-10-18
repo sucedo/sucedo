@@ -238,5 +238,20 @@ form.contact {
   
   #header ul.menu {
     font-size: 12px;
+    padding: 0;
+  }
+
+  #header > a {
+    width: 27px;
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  #header ul.menu li+li {
+    margin-left: 10px;
+  }
+
+  #header {
+    padding: 0 10px;
   }
 }
