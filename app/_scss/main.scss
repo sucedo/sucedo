@@ -29,6 +29,7 @@ a {
   background-color: $blue;
   padding: 0 30px;
   box-sizing: border-box;
+  z-index: 9999999;
 
   img.logo {
     margin-top: 6px;
@@ -207,5 +208,14 @@ form.contact {
     background-color: $blue;
     color: #fff;
 
+  }
+}
+
+//MOBILE STYLES
+
+@media only screen and (max-width: 999px){
+  .jumbotron.homepage .content {
+    height: auto;
+    overflow: auto;
   }
 }
