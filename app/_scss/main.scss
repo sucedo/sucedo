@@ -229,3 +229,14 @@ form.contact {
     overflow: auto;
   }
 }
+
+@media only screen and (max-width: 700px){
+  #header img.logo {
+    margin-top: 12px;
+    max-width: 130px;
+  }
+  
+  #header ul.menu {
+    font-size: 12px;
+  }
+}
