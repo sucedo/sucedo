@@ -3,6 +3,7 @@ layout: post
 title:  "The National Admissions Test for Law"
 date:   2009-10-5 12:41:57
 categories: blog
+redirect_from: /blog/2009/oct/7/national-admissions-test-law/
 ---
 
 ##The National Admissions Test for Law

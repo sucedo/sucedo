@@ -3,6 +3,7 @@ layout: post
 title:  "Biomedical Admissions Test"
 date:   2009-10-5 12:41:57
 categories: blog
+description_from: /blog/2009/oct/7/biomedical-admissions-test/
 ---
 
 The Biomedical Admissions Test (BMAT) is an entrance test that examines aptitude for certain medical, biomedical, physiological sciences, and veterinary courses. It is the successor to the former Oxford OMAT and Cambridge MVAT assessments. Over the last 4 years in particular, the use of the BMAT has expanded significantly; this is expected to continue.

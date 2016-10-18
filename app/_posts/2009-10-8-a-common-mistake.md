@@ -3,6 +3,7 @@ layout: post
 title:  "A Common Mistake"
 date:   2009-10-8 12:41:57
 categories: blog
+redirect_from: /blog/2009/oct/8/a-common-mistake/
 ---
 
 ##A Common Mistake

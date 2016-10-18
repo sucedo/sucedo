@@ -3,6 +3,7 @@ layout: post
 title:  "8 Tips for Oxbridge Interviews"
 date:   2009-10-8 12:41:57
 categories: blog
+redirect_from: /blog/2009/oct/8/8-tips-oxbridge-interviews/
 ---
 
 ##8 Tips for Oxbridge Interviews

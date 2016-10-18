@@ -3,6 +3,7 @@ layout: post
 title:  "The Thinking Skills Assessment"
 date:   2009-10-5 12:41:57
 categories: blog
+redirect_from: /blog/2009/oct/7/thinking-skills-assessment/
 ---
 
 ##The Thinking Skills Assessment
