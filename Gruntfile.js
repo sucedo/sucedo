@@ -51,9 +51,9 @@ module.exports = function (grunt) {
         options: {
           server: {
             baseDir: [
-              ".jekyll",
-              ".tmp",
-              "<%= yeoman.app %>"
+              '.jekyll',
+              '.tmp',
+              '<%= yeoman.app %>'
             ]
           },
           watchTask: true
@@ -62,7 +62,7 @@ module.exports = function (grunt) {
       dist: {
         options: {
           server: {
-            baseDir: "<%= yeoman.dist %>"
+            baseDir: '<%= yeoman.dist %>'
           }
         }
       },
@@ -79,9 +79,9 @@ module.exports = function (grunt) {
         options: {
           server: {
             baseDir: [
-              ".jekyll",
-              ".tmp",
-              "<%= yeoman.app %>"
+              '.jekyll',
+              '.tmp',
+              '<%= yeoman.app %>'
             ]
           },
           watchTask: true
@@ -133,6 +133,26 @@ module.exports = function (grunt) {
           dest: '.tmp/css',
           ext: '.css'
         }]
+      }
+    },
+    buildcontrol: {
+      dist: {
+        options: {
+          remote: 'git@github.com:sucedo/sucedo.github.io',
+          branch: 'gh-pages',
+          commit: true,
+          push: true
+        }
+      },
+      travis: {
+        options: {
+          remote: 'https://github.com/sucedo/sucedo.github.io',
+          branch: 'gh-pages',
+          login: process.env.GH_TOKEN,
+          token: 'x-oauth-basic',
+          commit: true,
+          push: true
+        }
       }
     },
     autoprefixer: {
@@ -280,26 +300,6 @@ module.exports = function (grunt) {
         }]
       }
     },
-    buildcontrol: {
-      dist: {
-        options: {
-          remote: 'git@github.com:sucedo/sucedo.github.io',
-          branch: 'gh-pages',
-          commit: true,
-          push: true
-        }
-      },
-      travis: {
-        options: {
-          remote: 'https://github.com/sucedo/sucedo.github.io',
-          branch: 'gh-pages',
-          login: process.env.GH_TOKEN,
-          token: 'x-oauth-basic',
-          commit: true,
-          push: true
-        }
-      }
-    },
     jshint: {
       options: {
         jshintrc: '.jshintrc',
@@ -414,4 +414,7 @@ module.exports = function (grunt) {
     'build',
     'buildcontrol:travis'
     ]);
+  
+  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 };
